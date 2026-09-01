@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Site Web Interactif</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">✨ InterActive</div>
+            <ul class="nav-links">
+                <li><a href="#home">Accueil</a></li>
+                <li><a href="#features">Fonctionnalités</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Bienvenue sur Notre Site Interactif</h1>
+            <p>Découvrez une expérience web moderne et dynamique</p>
+            <button class="btn btn-primary" id="ctaBtn">Commencer</button>
+        </div>
+        <div class="hero-animation">
+            <div class="floating-shapes">
+                <div class="shape shape-1"></div>
+                <div class="shape shape-2"></div>
+                <div class="shape shape-3"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="container">
+            <h2>Nos Fonctionnalités</h2>
+            <div class="features-grid">
+                <div class="feature-card" id="card1">
+                    <div class="feature-icon">🎨</div>
+                    <h3>Design Moderne</h3>
+                    <p>Interface élégante et responsive</p>
+                </div>
+                <div class="feature-card" id="card2">
+                    <div class="feature-icon">⚡</div>
+                    <h3>Performance</h3>
+                    <p>Chargement rapide et fluidité</p>
+                </div>
+                <div class="feature-card" id="card3">
+                    <div class="feature-icon">🔒</div>
+                    <h3>Sécurisé</h3>
+                    <p>Données protégées et confidentielles</p>
+                </div>
+                <div class="feature-card" id="card4">
+                    <div class="feature-icon">📱</div>
+                    <h3>Responsive</h3>
+                    <p>Compatible tous les appareils</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Counter Section -->
+    <section class="interactive-section">
+        <div class="container">
+            <h2>Section Interactive</h2>
+            <div class="counter-box">
+                <h3>Compteur Interactif</h3>
+                <div class="counter-display" id="counterDisplay">0</div>
+                <div class="counter-buttons">
+                    <button class="btn btn-secondary" id="decrementBtn">- Diminuer</button>
+                    <button class="btn btn-secondary" id="resetBtn">Réinitialiser</button>
+                    <button class="btn btn-secondary" id="incrementBtn">+ Augmenter</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Color Picker Section -->
+    <section class="color-section">
+        <div class="container">
+            <h2>Personnalisez la Couleur</h2>
+            <div class="color-picker-box">
+                <input type="color" id="colorPicker" value="#6366f1">
+                <p>Couleur sélectionnée: <span id="colorDisplay">#6366f1</span></p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contactez-Nous</h2>
+            <form class="contact-form" id="contactForm">
+                <input type="text" placeholder="Votre nom" required id="nameInput">
+                <input type="email" placeholder="Votre email" required id="emailInput">
+                <textarea placeholder="Votre message" rows="5" required id="messageInput"></textarea>
+                <button type="submit" class="btn btn-primary">Envoyer</button>
+            </form>
+            <div id="formMessage" class="form-message"></div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Site Web Interactif. Tous droits réservés.</p>
+            <div class="social-links">
+                <a href="#" class="social-icon">📘</a>
+                <a href="#" class="social-icon">🐦</a>
+                <a href="#" class="social-icon">💼</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
